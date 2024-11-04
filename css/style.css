@@ -14,19 +14,27 @@
 }
 html {
 	font-size: 62.5%;
+	max-width: 150rem;
+	margin: 0 auto;
 }
 body {
 	font-size: 1.4rem;
 }
 h1 {
 	font-size: 2.5rem;
+	font-weight: bold;
 }
 h2 {
-	font-size: 2.2rem;
+	font-size: 2rem;
+	font-weight: bold;
 }
 h3 {
 	color: var(--color-heading);
-	font-size: 2rem;
+	font-size: 1.8rem;
+}
+h4 {
+	font-size: 1.5rem;
+	font-weight: bold;
 }
 @media screen and (min-width: 726px) {
 	body {
@@ -36,25 +44,34 @@ h3 {
 		font-size: 3.5rem;
 	}
 	h2 {
-		font-size: 3rem;
+		font-size: 2.5rem;
 	}
 	h3 {
-		font-size: 2.8rem;
+		font-size: 2rem;
+	}
+	h4 {
+		font-size: 1.8rem;
 	}
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1124px) {
 	body {
 		font-size: 1.8rem;
 	}
 	h1 {
-		font-size: 5rem;
+		font-size: 4.5rem;
 	}
 	h2 {
-		font-size: 4rem;
+		font-size: 3rem;
 	}
 	h3 {
-		font-size: 3.2rem;
+		font-size: 2.5rem;
 	}
+	h4 {
+		font-size: 2rem;
+	}
+}
+.heading-1 {
+	margin: 5rem 4rem;
 }
 .btn {
 	border: 0;
@@ -65,15 +82,22 @@ h3 {
 	text-align: center;
 	white-space: nowrap;
 	font-size: 1.4rem;
-	font-weight: bold;
+}
+@media screen and (min-width: 1204px) {
+	.btn {
+		padding: 3rem 3.8rem;
+		font-size: 2rem;
+	}
 }
 .btn--primary {
 	background-color: var(--color-primary);
 	color: white;
+	margin-right: auto;
 }
 .wraper {
 	display: grid;
 	grid-template-columns: 1fr;
+	gap: 6rem;
 }
 @media screen and (min-width: 726px) {
 	.wraper {
@@ -86,7 +110,7 @@ h3 {
 	}
 }
 .card {
-	padding: 5rem 10rem;
+	padding: 2rem;
 }
 .container {
 	display: flex;
@@ -107,9 +131,13 @@ h3 {
 	color: var(--color-heading);
 	font-weight: bold;
 }
-.pare {
+.description {
 	margin-right: auto;
 	color: var(--color-dark-gray);
+}
+.descript {
+	color: var(--color-dark-gray);
+	margin-top: 0.5rem;
 }
 .product {
 	display: flex;
